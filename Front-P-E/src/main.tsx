@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './Rotas/ErrorPage.tsx'
 import Enter from './Rotas/Enter.tsx'
 import Login from './Rotas/Login.tsx'
+import Register from './Rotas/Register.tsx'
 
 
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />,
+      },
+      {
+        path: '/register',
+        element: <Register />,
       },
     ]
   }
