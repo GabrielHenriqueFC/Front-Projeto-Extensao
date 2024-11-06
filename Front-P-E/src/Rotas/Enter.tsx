@@ -1,6 +1,8 @@
-
+import { Link } from 'react-router-dom';
 import '../Estilos/Enter.css'
 
+
+//Rota de entrada do App
 export const Enter = () => {
   return (
     <div className='app-content'>
@@ -11,8 +13,8 @@ export const Enter = () => {
             <p className="subtitle">Let’s start your English adventure <br/> today. Learning English is fun!</p>
         </main>
         <section>
-            <button className="button button-primary" type="button">COMEÇAR AGORA</button>
-            <button className="button button-secondary" type="button">JÁ TENHO CONTA</button>
+            <Link to='/cadastro' className="button button-primary" type="button">COMEÇAR AGORA</Link>
+            <Link to='/login' className="button button-secondary" type="button">JÁ TENHO CONTA</Link>
         </section>
     </div>
   )

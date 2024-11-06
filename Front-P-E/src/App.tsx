@@ -1,19 +1,14 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Login from './Rotas/Login'
-import Enter from './Rotas/Enter'
+import { Outlet } from 'react-router-dom';
 
 function App() {
   
+  //App e conteudo das paginas inseridos no componente Outlet pelo react-router-dom
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Enter/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='*' element={<h1>Page Not Found</h1>}/>
-      </Routes>
-    </BrowserRouter>
+    <div className="app-container">
+      <Outlet/>
+    </div>
   )
 }
 

@@ -12,12 +12,12 @@ section.login-container {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 40vh;
+    height: 45vh;
     width: 100%;
 }
 
 .login-form {
-    height: 25vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
