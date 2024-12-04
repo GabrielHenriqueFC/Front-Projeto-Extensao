@@ -9,6 +9,8 @@ import ErrorPage from './Rotas/ErrorPage.tsx'
 import Enter from './Rotas/Enter.tsx'
 import Login from './Rotas/Login.tsx'
 import Register from './Rotas/Register.tsx'
+import Home from './Rotas/Home.tsx'
+import Game from './Rotas/Game.tsx'
 
 
 
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register />,
+      },
+      {
+        path: '/home',
+        element: <Home />,
+      },
+      {
+        path: '/game',
+        element: <Game />,
       },
     ]
   }

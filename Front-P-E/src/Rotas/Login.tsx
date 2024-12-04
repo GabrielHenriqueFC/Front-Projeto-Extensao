@@ -1,6 +1,7 @@
 import '../Estilos/login.css'
 import { DiApple } from "react-icons/di";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
   return (
@@ -28,9 +29,9 @@ export const Login = () => {
             placeholder="Digite sua senha"
           />
         </form>
-          <button type="submit" className="login-button">
+          <Link type="submit" className="login-button" to='/home'>
             Login
-          </button>
+          </Link>
       </section>
       <footer>
           <div className="login-options">
